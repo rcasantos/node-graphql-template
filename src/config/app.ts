@@ -1,10 +1,8 @@
 import 'dotenv/config'
 import express from 'express'
-import { bodyParser, contentType, cors } from '../middlewares'
+import setupMiddlewares from './middlewares'
 
 const app = express()
-app.use(bodyParser)
-app.use(contentType)
-app.use(cors)
+setupMiddlewares(app)
 
 export default app

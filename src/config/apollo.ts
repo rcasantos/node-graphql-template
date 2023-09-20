@@ -8,7 +8,7 @@ import type { MyContext } from '../types'
 export default async (httpServer: any): Promise<any> => {
   const resolversList: any = []
 
-  for (const file of fg.sync('**/src/apps/**/resolvers/*.ts')) {
+  for (const file of fg.sync('**/src/apps/**/*.resolver.ts')) {
     const fileImport = await import(`../../${file}`)
     if (Object.values(fileImport)[0]) {
       resolversList.push(Object.values(fileImport)[0])

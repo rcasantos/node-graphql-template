@@ -10,7 +10,7 @@ export const AppDataSource = new DataSource({
   synchronize: true,
   logging: false,
   entities: [
-    '***/entities/*.ts'
+    '***/apps/**/*.entity.ts'
   ],
   migrations: [
     '***/migrations/*{.ts,.js}'

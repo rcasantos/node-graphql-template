@@ -1,4 +1,4 @@
 dist
 node_modules
-src/entities
+src/apps/**/*.entity.ts
 src/config/schema.gql

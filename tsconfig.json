@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "baseUrl": "src",
+    "outDir": "./dist",
+    "module": "commonjs",
+    "target": "ESNext",
+    "lib": ["ESNext", "esnext.asynciterable"],
+    "esModuleInterop": true,
+    "allowJs": true,
+    "strictNullChecks": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "paths": {
+      "@/*": ["*"],
+      "@/tests/*": ["../tests/*"]
+    },
+  },
+  "include": ["src/*.ts", "src/**/*.ts", "src/***/**/*.ts"],
+  "exclude": ["dist", "node_modules"]
+}

@@ -4,6 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
+    "lint": "eslint \"**/*.{ts,tsx}\" --no-error-on-unmatched-pattern",
     "dev": "tsnd --respawn --inspect --transpile-only src/index.ts",
     "build": "tsc --build"
   },

@@ -2,3 +2,4 @@ dist
 node_modules
 src/apps/**/*.entity.ts
 src/config/schema.gql
+commitlint.config.js
